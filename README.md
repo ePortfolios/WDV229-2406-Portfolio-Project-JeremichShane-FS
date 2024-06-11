@@ -5,9 +5,9 @@
 
 ### Student First & Last Name
 
-🆔 &nbsp; 000#######
+🆔 &nbsp; 0005221438
 
-📪 &nbsp; email@student.fullsail.edu
+📪 &nbsp; scjeremich@student.fullsail.edu
 
 
 ![Degree Program](https://img.shields.io/badge/Degree-Web%20Development-orange?logo=gnometerminal)
