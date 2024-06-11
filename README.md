@@ -3,7 +3,7 @@
 
 # Project Name: WDP2 Portfolio Project
 
-### Student First & Last Name
+### Shane Jeremich
 
 🆔 &nbsp; 0005221438
 
