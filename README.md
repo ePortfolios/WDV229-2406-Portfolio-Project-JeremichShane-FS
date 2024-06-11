@@ -36,9 +36,8 @@ For each Milestone #2-4, you should use all 4 icons.
 
 ### Milestone 1
 
-For this milestone you will have created a wireframe prototype in Figma.   
-Post your link here, so you have easy access to it.
-- Figma Link
+For this milestone I've created a wireframe prototype in Figma.   
+- ![Figma](https://www.figma.com/design/e9k60esuwNFIxpMFG6kvUE/MLSHub?node-id=0-1&t=tZdTgxfhh9UCJWOn-0)
 
 
 <br>
