@@ -21,8 +21,6 @@
 ## 📢 &nbsp; Milestone Check-Ins
 
 Each week I will summarize my milestone activity and progress by writing a stand-up. A stand-up is meant to be a succinct update on how things are going.  
-Use the prompts below as a guide on what to write about.    
-For each Milestone #2-4, you should use all 4 icons.   
 
 ⚙️ Overview - What I worked on this past week
 <br>
