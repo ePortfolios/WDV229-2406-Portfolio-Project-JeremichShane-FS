@@ -1,0 +1,11 @@
+@use "../../sass/base/" as *;
+
+.scoreboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 1.25rem;
+
+  background: $black;
+}

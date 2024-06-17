@@ -1,4 +1,6 @@
+@use "../../sass/base" as *;
 @use "../../sass/utilities/" as *;
 
 .footer {
+  background: $red;
 }

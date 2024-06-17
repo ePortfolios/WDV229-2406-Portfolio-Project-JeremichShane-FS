@@ -1,0 +1,22 @@
+@use "../../../sass/base" as *;
+
+.scoreboard-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 11.25rem;
+  height: 7.875rem;
+  margin-top: 1.25rem;
+  padding: 0.5rem 1.125rem;
+
+  color: $white;
+  font-size: 0.875rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

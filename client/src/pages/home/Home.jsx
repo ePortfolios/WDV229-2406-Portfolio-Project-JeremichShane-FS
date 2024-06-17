@@ -1,4 +1,11 @@
+import { Newsfeed, Scoreboard } from "../../components";
+
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Scoreboard />
+      <Newsfeed />
+    </div>
+  );
 };
 export default Home;

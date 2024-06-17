@@ -1,0 +1,23 @@
+@use "../../sass/base" as *;
+
+.inputfield-group {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  &__label {
+    margin-bottom: 0.5rem;
+
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  &__input {
+    margin-bottom: 1rem;
+    padding: 0.5em;
+
+    border: 1px solid $background-color;
+    border-radius: 0.375rem;
+  }
+}

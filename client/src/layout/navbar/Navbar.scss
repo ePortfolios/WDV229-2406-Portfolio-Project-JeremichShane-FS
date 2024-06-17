@@ -1,3 +1,5 @@
+@use "../../sass/utilities/" as *;
+
 .navbar {
   align-self: center;
 
@@ -18,17 +20,6 @@
     color: #fff;
     text-decoration: none;
 
-    &::after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 2px;
-      background: #fff;
-      transition: width 0.3s;
-    }
-
-    &:hover::after {
-      width: 100%;
-    }
+    @include linkStyle;
   }
 }

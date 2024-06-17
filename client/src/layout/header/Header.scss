@@ -1,11 +1,12 @@
 @use "../../sass/base/" as *;
+@use "../../sass/utilities/" as *;
 
 .header {
   position: fixed;
   top: 0;
 
   width: 100%;
-  height: 6.25rem;
+  height: $header-height;
 
   display: flex;
 
