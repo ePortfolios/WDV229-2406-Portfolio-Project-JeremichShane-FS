@@ -1,0 +1,9 @@
+export const ROOT = "/";
+export const HOME = "/home";
+export const SCHEDULE = "/schedule";
+export const STANDINGS = "/standings";
+export const TICKETS = "/tickets";
+export const LOGIN = "/login";
+export const SIGNUP = "/signup";
+export const PROFILE = "/profile";
+export const NOT_FOUND = "*";

@@ -18,13 +18,14 @@
     width: 100%;
   }
 
-  &__logo-container {
-  }
+  &__logo {
+    display: flex;
+    align-items: center;
 
-  &__img {
-    width: 4.6875rem;
-    height: 4.6875rem;
-
+    &-img {
+      width: 4.6875rem;
+      height: 4.6875rem;
+    }
     &-text {
       font-size: 4rem;
       color: $white;

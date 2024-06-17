@@ -1,5 +1,6 @@
 @use "colors" as *;
 @use "typography" as *;
+@use "../utilities" as *;
 
 /* Remove default margin */
 *,
@@ -26,6 +27,7 @@ main {
   margin: 0 auto;
   padding-top: 4rem;
   background: $white;
+  box-shadow: $box-shadow;
 }
 
 .container {
