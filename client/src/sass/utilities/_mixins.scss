@@ -1,0 +1,6 @@
+@use "variables" as *;
+
+@mixin center-layout {
+  max-width: $max-width;
+  margin: 0 auto;
+}
