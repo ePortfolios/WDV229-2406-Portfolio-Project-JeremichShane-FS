@@ -1,0 +1,51 @@
+@use "../../sass/base" as *;
+@use "../../sass/utilities/" as *;
+
+.profile {
+  width: 50%;
+  margin: 6rem auto 0;
+  padding-bottom: $header-height;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    width: -webkit-fill-available;
+
+    margin-top: 3.125rem;
+    width: 80%;
+  }
+
+  &__title {
+    font-size: $heading-1-size;
+    font-weight: 700;
+  }
+
+  &__form-center {
+    margin: 0 auto;
+  }
+
+  &__avatar {
+    &-image {
+      max-width: 9.375rem;
+      height: 9.375rem;
+      border-radius: 50%;
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 20%;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    width: 80%;
+    padding-left: 5rem;
+  }
+}
