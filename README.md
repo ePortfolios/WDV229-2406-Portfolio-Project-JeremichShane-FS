@@ -14,6 +14,26 @@
 
 <br>
 
+## ⚙️ Configuration
+
+This project includes a sample environment file (`.env.sample`). To use it, you need to rename it to `.env`. This can be done by removing the `sample` part from the filename.
+
+In addition, this project uses `concurrently` to run multiple npm scripts simultaneously. If you don't have `concurrently` installed globally on your system, you'll need to install it in the project. Make sure you're in the root directory of the project and run the following command:
+
+```bash
+npm install concurrently
+```
+
+This will install concurrently locally in your project and allow you to use it to run the project's npm scripts.
+
+Once concurrently is installed, you can install all npm packages in both the client and server directories by running the following command in the root directory of the project:
+
+```bash
+npm run install
+```
+
+This command will install all the necessary dependencies for both the client and server directories of the project.
+
 ## 📢 &nbsp; Milestone Check-Ins
 
 Each week I will summarize my milestone activity and progress by writing a stand-up. A stand-up is meant to be a succinct update on how things are going.
