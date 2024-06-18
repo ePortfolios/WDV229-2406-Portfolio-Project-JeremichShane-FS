@@ -19,11 +19,8 @@
 Each week I will summarize my milestone activity and progress by writing a stand-up. A stand-up is meant to be a succinct update on how things are going.
 
 ⚙️ Overview - What I worked on this past week
-<br>
 🌵 Challenges - What problems did I have & how I'm addressing them
-<br>
 🏆 Accomplishments - What is something I "leveled up" on this week
-<br>
 🔮 Next Steps - What I plan to prioritize and do next
 
 <br>
@@ -38,13 +35,19 @@ For this milestone I've created a wireframe prototype in Figma.
 
 ### Milestone 2
 
-⚙️ Overview - Write overview here.
+⚙️ Overview - This past week, I've made significant strides in my project. I started with the initial setup of the projects, folders, and files for both the frontend and backend of the application. I then set up routes using the react-router-dom library and completed the Navbar and Header components. Regarding HTML updates, I modified the project title to match the project name and added a MLS favicon. A significant portion of my time was spent on styling, where I finished stylizing the login component and then created and styled the Profile component. Throughout the week, I also made several updates to the README file to document my progress. I plan to continue building out the application's functionality and addressing any challenges.
+
 <br>
-🌵 Challenges - Write challenges here.
+
+🌵 Challenges - Time management has been a challenge for me this week in real-life situations. But apart from that, I've also faced the challenge of implementing my APIs or database to cache the information so I can build out the rest of my components.
+
 <br>
-🏆 Accomplishments - Write Accomplishments here.
+
+🏆 Accomplishments - For accomplishments, it's just getting my folder structure in place, my routes implemented, and the project to compile and run on localhost so I can see it in action.
+
 <br>
-🔮 Next Steps - Write your next steps here.
+
+🔮 Next Steps - The following steps are to work with my APIs for the data, build my database with Mongo DB to cache it, and then map it into my react Project to finish building my missing components.
 
 <br>
 
@@ -52,27 +55,22 @@ Please discuss the following:
 
 #### Page #1
 
-- Name
-- Purpose
+- Newsfeed
+- This page will display all the current trending news with MLS. Right now their is placeholders as it will be replaced with the information coming from the APIs.
 
 #### Page #2
 
-- Name
-- Purpose
+- Login
+- This page is to authenticate a User to access their profile page. This page will store their information such as name, email, password, and their favorite team. Their favorite team can be used in future versions to customize the information specific to their favorite team.
 
 #### Page #3
 
-- Name
-- Purpose
+- Profile
+- Once the user is logged in they can access their User Profile. This will have their information and they'll be able to update it. The user should be stored into the database.
 
 #### Page #4
 
-- Name
-- Purpose
-
-#### Remember that creating a project board, issues, and milestones is 50% of your grade!
-
-If you are having trouble, contact your instructor ASAP, you might need to be part of the ePortfolio group to have better access.
+I still need to get Page 4 right now, as the rest of my pages rely on requesting my endpoints to get the information from my APIs first. However, I am looking to build my database first to cache the data and use state management to distribute the information to the rest of the Application, for example, Team by ID, Standings, and Schedule. This information, logos, and images all come from the APIs. Right now, I have placeholders for my Newsfeed. I’ve built all the components that do not need the API's information. Also, I’ll be working on authorization for users to log in or sign up and store that in the database.
 
 <br>
 
