@@ -1,4 +1,5 @@
 import { Form, InputField } from "../../components";
+import { FormButton } from "../../components/buttons";
 import "./Profile.scss";
 
 const Profile = () => {
@@ -23,6 +24,7 @@ const Profile = () => {
             <InputField label="Email" type="email" id="email" />
             <InputField label="Password" type="password" id="password" />
             <InputField label="Change Password" type="password" id="change-password" />
+            <FormButton type="button">Update Profile</FormButton>
           </div>
         </div>
       </Form>

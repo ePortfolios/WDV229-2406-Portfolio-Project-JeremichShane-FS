@@ -1,7 +1,7 @@
 @use "../../../sass/base/" as *;
 
 .form-button {
-  width: 5rem;
+  min-width: 5rem;
   height: 2rem;
 
   background: $black;
