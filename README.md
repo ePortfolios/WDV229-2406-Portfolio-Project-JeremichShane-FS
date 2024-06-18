@@ -70,7 +70,8 @@ Please discuss the following:
 
 #### Page #4
 
-I still need to get Page 4 right now, as the rest of my pages rely on requesting my endpoints to get the information from my APIs first. However, I am looking to build my database first to cache the data and use state management to distribute the information to the rest of the Application, for example, Team by ID, Standings, and Schedule. This information, logos, and images all come from the APIs. Right now, I have placeholders for my Newsfeed. I’ve built all the components that do not need the API's information. Also, I’ll be working on authorization for users to log in or sign up and store that in the database.
+- Sign up
+- If the user does not have an account registered with MLS Hub, they can use this page to sign up, which will then be saved to the database and can access their profile page.
 
 <br>
 
