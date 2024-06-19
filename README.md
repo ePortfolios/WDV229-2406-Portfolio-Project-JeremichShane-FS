@@ -16,23 +16,37 @@
 
 ## ⚙️ Configuration
 
-This project includes a sample environment file (`.env.sample`). To use it, you need to rename it to `.env`. This can be done by removing the `sample` part from the filename.
+This project uses `concurrently`, an npm package that allows you to run multiple npm scripts simultaneously. This is particularly useful in a development environment where you might want to run a server and a client at the same time.
 
-In addition, this project uses `concurrently` to run multiple npm scripts simultaneously. If you don't have `concurrently` installed globally on your system, you'll need to install it in the project. Make sure you're in the root directory of the project and run the following command:
+The project also includes a sample environment file (`.env.sample`). This file contains environment variables that are necessary for the application to run correctly.
+
+To set up the project, follow these steps:
+
+1. **Install `concurrently` and other dependencies**: If you do not have `concurrently` installed globally, make sure you're in the root directory of the project and run the following command:
+
+   ```bash
+   npm install concurrently
+   ```
+
+   This command will install `concurrently` in the root directory, provided that you ran `npm install concurrently` from the root directory. If you already have `concurrently` installed globally, you can skip this step.
+
+2. **Install dependencies in the client and server directories**: Run the following command in the root directory of the project:
+
+   ```bash
+   npm run install
+   ```
+
+   This command will install all the necessary dependencies for both the client and server directories of the project.
+
+3. **Set up the environment file**: During the installation process, the `.env.sample` file will be automatically renamed to `.env`, allowing the application to access these variables.
+
+After all dependencies are installed and the `.env` file is set up, you can start both the backend and frontend servers simultaneously by running the following command:
 
 ```bash
-npm install concurrently
+npm run dev
 ```
 
-This will install concurrently locally in your project and allow you to use it to run the project's npm scripts.
-
-Once concurrently is installed, you can install all npm packages in both the client and server directories by running the following command in the root directory of the project:
-
-```bash
-npm run install
-```
-
-This command will install all the necessary dependencies for both the client and server directories of the project.
+This setup allows for a streamlined development process, as both servers can be managed from a single terminal instance.
 
 ## 📢 &nbsp; Milestone Check-Ins
 

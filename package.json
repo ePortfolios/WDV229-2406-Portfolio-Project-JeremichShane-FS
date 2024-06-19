@@ -1,7 +1,7 @@
 {
   "name": "mlshub",
   "scripts": {
-    "install": "cd client && npm install && cd ../server && npm install && cd ..",
+    "install": "cd client && npm install && cd ../server && npm install && node config/rename.js && cd ..",
     "frontend": "cd client && npm run dev",
     "backend": "cd server && npm run dev",
     "dev": "conc \"npm run frontend\" \"npm run backend\""
