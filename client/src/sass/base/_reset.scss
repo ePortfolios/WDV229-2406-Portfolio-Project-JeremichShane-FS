@@ -36,9 +36,12 @@ h4 {
 }
 
 /* Remove list styles on ul and ol elements */
-ul,
-ol {
+ul {
   list-style: none;
+}
+
+ol {
+  padding: 0 0.9375rem;
 }
 
 /* ALL A elements, and elements that don't have a class get default styles */
