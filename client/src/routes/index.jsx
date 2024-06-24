@@ -1,5 +1,5 @@
 import * as p from "../constants/routes";
-import { Home, Login, NotFound, Profile, Schedule, Signup, Standings, Tickets } from "../pages";
+import { Home, Login, NotFound, Profile, Schedule, Signup, Standings } from "../pages";
 import Root from "./Root";
 
 const routes = [
@@ -10,7 +10,6 @@ const routes = [
       { path: p.ROOT, element: <Home /> },
       { path: p.SCHEDULE, element: <Schedule /> },
       { path: p.STANDINGS, element: <Standings /> },
-      { path: p.TICKETS, element: <Tickets /> },
       { path: p.LOGIN, element: <Login /> },
       { path: p.SIGNUP, element: <Signup /> },
       { path: p.PROFILE, element: <Profile /> },

@@ -1,19 +1,7 @@
-.standings {
-  font-size: 0.75rem;
-
-  & * {
-    // border: 1px solid green;
-  }
-
-  &__table {
-    width: 100%;
-    table-layout: fixed;
-    border-collapse: collapse;
-
-    &--west {
-      margin-top: 1.25rem;
-    }
-  }
+.standings-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
 
   &__thead {
     background-color: #f4f4f4;
@@ -25,20 +13,16 @@
     border-bottom: 2px solid #ddd;
   }
 
-  &__row:nth-child(odd) {
-    background-color: #f9f9f9;
+  &__row {
+    &:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
   }
 
   &__data {
     height: 28px;
     border-bottom: 1px solid #ddd;
     white-space: nowrap;
-  }
-
-  &__title {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 1.25rem;
   }
 
   &__header,

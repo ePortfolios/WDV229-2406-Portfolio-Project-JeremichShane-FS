@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Standings } from "../";
+import { StandingsBasic } from "../";
 import { ArticlesContext } from "../../contexts/ArticlesContext";
 import { NewsfeedCard } from "../cards";
 import "./Newsfeed.scss";
@@ -15,7 +15,7 @@ const Newsfeed = () => {
           ))}
         </ul>
         <div>
-          <Standings />
+          <StandingsBasic />
         </div>
       </div>
     </section>
