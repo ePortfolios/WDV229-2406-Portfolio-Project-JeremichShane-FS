@@ -16,7 +16,7 @@
 
 ## ⚙️ Configuration
 
-This project uses `concurrently`, an npm package that allows you to run multiple npm scripts simultaneously. This is particularly useful in a development environment where you might want to run a server and a client at the same time.
+This project uses `concurrently`, an npm package that allows you to run multiple npm scripts simultaneously. This is particularly useful in a development environment where you might want to run a server and a client at the same time. However, using `concurrently` is not mandatory. You can also navigate (`cd`) into the `client` and `server` directories and run the script `npm run dev` for each one to start the front end and backend, respectively. This approach requires running multiple terminal windows. `Concurrently` simply makes it easier to manage both processes simultaneously.
 
 The project also includes a sample environment file (`.env.sample`). This file contains environment variables that are necessary for the application to run correctly.
 
@@ -28,19 +28,19 @@ To set up the project, follow these steps:
    npm install concurrently
    ```
 
-   This command will install `concurrently` in the root directory, provided that you ran `npm install concurrently` from the root directory. If you already have `concurrently` installed globally, you can skip this step.
+   This command will install `concurrently` in the root directory, provided that you ran `npm install concurrently` from the root directory. If you already have `concurrently` installed globally, or you wish to not install `concurrently` then you can skip this step.
 
 2. **Install dependencies in the client and server directories**: Run the following command in the root directory of the project:
 
    ```bash
-   npm run install
+   npm run setup
    ```
 
-   This command will install all the necessary dependencies for both the client and server directories of the project.
+This command will set up the project, including installing all the necessary dependencies in both the client and server directories.
 
 3. **Set up the environment file**: During the installation process, the `.env.sample` file will be automatically renamed to `.env`, allowing the application to access these variables.
 
-After all dependencies are installed and the `.env` file is set up, you can start both the backend and frontend servers simultaneously by running the following command:
+After all dependencies are installed and the `.env` files in both the server and client directories is set up, you can start both the backend and frontend servers simultaneously by running the following command:
 
 ```bash
 npm run dev
