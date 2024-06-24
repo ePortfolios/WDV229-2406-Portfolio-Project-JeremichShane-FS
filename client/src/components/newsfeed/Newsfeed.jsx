@@ -1,16 +1,23 @@
+import { useContext } from "react";
+import { Standings } from "../";
+import { ArticlesContext } from "../../contexts/ArticlesContext";
 import { NewsfeedCard } from "../cards";
 import "./Newsfeed.scss";
 
-// TODO: Map through the data and render a NewsfeedCard component for each news item
-// Right now we are just rendering several NewsfeedCard component as placeholders, but this will be dynamic in the next milestone
-
 const Newsfeed = () => {
+  const { articles } = useContext(ArticlesContext);
   return (
-    <section>
-      <NewsfeedCard />
-      <NewsfeedCard />
-      <NewsfeedCard />
-      <NewsfeedCard />
+    <section className="newsfeed">
+      <div className="newsfeed__container">
+        <ul className="newsfeed__list">
+          {articles.map(article => (
+            <NewsfeedCard key={article._id} {...article} />
+          ))}
+        </ul>
+        <div>
+          <Standings />
+        </div>
+      </div>
     </section>
   );
 };

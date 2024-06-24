@@ -3,7 +3,7 @@
 
 .newsfeed-card {
   display: flex;
-  width: 100%;
+  width: 43.75rem;
   margin-bottom: 1rem;
   padding: 1rem;
 
@@ -13,8 +13,24 @@
   }
 
   &__image {
-    border-radius: 0.5rem;
+    position: relative;
     margin-right: 1rem;
+  }
+
+  .newsfeed-card__img {
+    width: 40rem;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+
+  &__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: $white;
+    padding: 0.625rem;
+    border-radius: 0.5rem;
   }
 
   &__content {
