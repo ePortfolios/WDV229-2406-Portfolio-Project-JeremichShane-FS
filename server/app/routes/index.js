@@ -1,7 +1,7 @@
 import express from "express";
 import { RESPONSE_MESSAGES } from "../constants/responseMessages.js";
 import articleRoutes from "./articleRoutes.js";
-import combinedFixtureRoutes from "./combinedFixtureRoutes.js";
+
 import fixtureRoutes from "./fixtureRoutes.js";
 import standingsRoutes from "./standingsRoutes.js";
 
@@ -14,6 +14,5 @@ router.get("/", (req, res) => {
 router.use("/articles", articleRoutes);
 router.use("/standings", standingsRoutes);
 router.use("/fixtures", fixtureRoutes);
-router.use("/combined-fixtures", combinedFixtureRoutes);
 
 export default router;

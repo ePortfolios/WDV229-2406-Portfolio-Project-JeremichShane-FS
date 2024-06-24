@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { StandingsTable } from "../../components";
+import { Table } from "../../components";
 import { StandingsContext } from "../../contexts/StandingsContext";
 import { columns } from "./Standings.data";
 import "./Standings.scss";
@@ -13,11 +13,11 @@ const Standings = () => {
     <section className="standings">
       <div className="standings__east">
         <h1 className="standings__title">Eastern Conference</h1>
-        <StandingsTable standingsData={eastStandings} columns={columns} />
+        <Table standingsData={eastStandings} columns={columns} />
       </div>
       <div className="standings__west">
         <h1 className="standings__title">Western Conference</h1>
-        <StandingsTable standingsData={westStandings} columns={columns} />
+        <Table standingsData={westStandings} columns={columns} />
       </div>
       <div className="standings__legend">
         <h2 className="standings__legend-title">Playoffs Designation</h2>

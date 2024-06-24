@@ -32,7 +32,7 @@ API.getFixtures = async () => {
 
 API.getCombinedFixtures = async () => {
   try {
-    const res = await axios.get(`${baseURL}/api/v1/combined-fixtures`);
+    const res = await axios.get(`${baseURL}/api/v1/fixtures/combined-fixtures`);
     return res.data;
   } catch (err) {
     console.error(err);

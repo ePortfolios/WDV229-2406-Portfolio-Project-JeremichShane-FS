@@ -1,5 +1,3 @@
-import "./Schedule.scss";
-
 const Schedule = () => {
   return <div>Schedule</div>;
 };

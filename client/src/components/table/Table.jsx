@@ -1,28 +1,28 @@
 import PropTypes from "prop-types";
-import "./StandingsTable.scss";
+import "./Table.scss";
 
-const StandingsTable = ({ standingsData, columns }) => {
+const Table = ({ standingsData, columns }) => {
   return (
-    <table className="standings-table">
-      <thead className="standings-table__thead">
-        <tr className="standings-table__row">
+    <table className="table">
+      <thead className="table__thead">
+        <tr className="table__row">
           {columns.map(({ header, width, textAlign }, index) => (
             <th
               key={index}
-              className="standings-table__header"
+              className="table__header"
               style={{ width: width, textAlign: textAlign }}>
               {header}
             </th>
           ))}
         </tr>
       </thead>
-      <tbody className="standings-table__tbody">
+      <tbody className="table__tbody">
         {standingsData.map((rowData, rowIndex) => (
-          <tr key={rowIndex} className="standings-table__row">
+          <tr key={rowIndex} className="table__row">
             {columns.map(({ render, width, textAlign }, colIndex) => (
               <td
                 key={colIndex}
-                className="standings-table__data"
+                className="table__data"
                 style={{ width: width, textAlign: textAlign }}>
                 {render(rowData)}
               </td>
@@ -34,7 +34,7 @@ const StandingsTable = ({ standingsData, columns }) => {
   );
 };
 
-StandingsTable.propTypes = {
+Table.propTypes = {
   standingsData: PropTypes.array.isRequired,
   columns: PropTypes.arrayOf(
     PropTypes.shape({
@@ -44,4 +44,4 @@ StandingsTable.propTypes = {
   ).isRequired,
 };
 
-export default StandingsTable;
+export default Table;
