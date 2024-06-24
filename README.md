@@ -29,6 +29,7 @@ To set up the project, follow these steps:
    ```
 
    This command will install `concurrently` in the root directory, provided that you ran `npm install concurrently` from the root directory. If you already have `concurrently` installed globally, or you wish to not install `concurrently` then you can skip this step.
+   <br>
 
 2. **Install dependencies in the client and server directories**: Run the following command in the root directory of the project:
 
