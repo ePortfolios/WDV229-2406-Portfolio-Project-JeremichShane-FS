@@ -17,11 +17,6 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="navbar__item">
-          <Link to={p.TICKETS} className="navbar__link">
-            Tickets
-          </Link>
-        </li>
-        <li className="navbar__item">
           <Link to={p.LOGIN} className="navbar__link">
             Login
           </Link>
