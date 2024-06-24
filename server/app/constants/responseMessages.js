@@ -3,7 +3,7 @@ export const RESPONSE_MESSAGES = {
   REQUEST_DETAILS: req => `${req.method} - ${req.hostname} - ${req.originalUrl}`,
 
   // API failed message
-  REQUEST_DETAILS_FAIL: req => `Error on request ${req.method} ${req.url} ${err.message}`,
+  REQUEST_DETAILS_FAIL: (req, err) => `Error on request ${req.method} ${req.url} ${err.message}`,
 
   // 200 status codes
   RECORD_CREATED_SUCCESSFULLY: req => `${req.method} - Record created successfully`,
