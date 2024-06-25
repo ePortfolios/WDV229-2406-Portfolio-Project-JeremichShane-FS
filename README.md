@@ -141,8 +141,12 @@ Please discuss the following:
 #### API
 
 - Link to the API that is used in your code
+  - https://api-football-v1.p.rapidapi.com/v3/standings
+  - https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/news
 - Reason you chose the API
+  - I opted for the first API due to its comprehensive data coverage of Teams, Fixtures, Schedules, and Standings for major soccer competitions. This aligns perfectly with the objectives of MLSHub, my application dedicated to the MLS league.
 - Where in your code did you use it?
+  - i have a file called `dataService.js` located in `server/app/services` which fetches the data from the API's to work with my application
 
 #### Axios
 
