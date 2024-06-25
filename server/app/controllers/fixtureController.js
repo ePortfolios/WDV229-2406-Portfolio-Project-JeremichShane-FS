@@ -61,14 +61,17 @@ export const getFixturesForWeek = async (weekOffset = 0) => {
 function getCurrentWeekRange(weekOffset = 0) {
   const currentDate = new Date();
   currentDate.setDate(currentDate.getDate() + weekOffset * 7);
-  // calculates the date for the first day of the week (startDate) by subtracting the current day of the week from the current date
-  const first = currentDate.getDate() - currentDate.getDay();
-  const last = first + 6;
 
-  const startDate = new Date(currentDate.setDate(first));
+  // date for the first day of the week (startDate)
+  const first = currentDate.getDate() - currentDate.getDay();
+  const startDate = new Date(currentDate);
+  startDate.setDate(first);
   startDate.setHours(0, 0, 0, 0);
 
-  const endDate = new Date(currentDate.setDate(last));
+  // new base date for endDate
+  const endDateBase = new Date(startDate);
+  endDateBase.setDate(startDate.getDate() + 6);
+  const endDate = new Date(endDateBase);
   endDate.setHours(23, 59, 59, 999);
 
   return { startDate, endDate };

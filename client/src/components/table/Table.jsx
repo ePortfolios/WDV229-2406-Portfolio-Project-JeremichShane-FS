@@ -35,13 +35,13 @@ const Table = ({ standingsData, columns }) => {
 };
 
 Table.propTypes = {
-  standingsData: PropTypes.array.isRequired,
+  standingsData: PropTypes.array,
   columns: PropTypes.arrayOf(
     PropTypes.shape({
-      header: PropTypes.string.isRequired,
-      render: PropTypes.func.isRequired,
+      header: PropTypes.string,
+      render: PropTypes.func,
     })
-  ).isRequired,
+  ),
 };
 
 export default Table;

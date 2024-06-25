@@ -1,21 +1,6 @@
 import PropTypes from "prop-types";
-import { formatTeamName } from "../../../utils/formatTeamName";
+import { formatDate, formatTeamName, formatTime } from "../../../utils";
 import "./ScoreboardCard.scss";
-
-const formatDate = dateString => {
-  const date = new Date(dateString);
-  return date.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
-};
-
-const formatTime = dateString => {
-  const date = new Date(dateString);
-  let timeString = date.toLocaleTimeString("en-US", {
-    hour: "numeric",
-    minute: "2-digit",
-    hour12: true,
-  });
-  return timeString.replace("AM", "am").replace("PM", "pm");
-};
 
 const ScoreboardCard = ({ game }) => {
   return (

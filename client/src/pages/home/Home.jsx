@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Newsfeed, Scoreboard } from "../../components";
-import useFetchCombinedGame from "../../hooks/useFetchCombinedGame";
+import useFetchCombinedGames from "../../hooks/useFetchCombinedGames";
 
 const Home = () => {
   const [games, setGames] = useState([]);
 
-  useFetchCombinedGame(setGames);
+  useFetchCombinedGames(setGames);
 
   return (
     <div>

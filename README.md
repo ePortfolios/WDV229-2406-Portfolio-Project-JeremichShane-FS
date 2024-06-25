@@ -1,4 +1,4 @@
-# 💻 Project & Portfolio II
+\*\*\*\*# 💻 Project & Portfolio II
 
 # Project Name: WDP2 Portfolio Project
 
@@ -113,14 +113,28 @@ Please discuss the following:
 ### Milestone 3
 
 ⚙️ Overview - Write overview here.
-<br>
+Over the past week, significant progress has been made on the project. The Swiper library was installed to enhance the scoreboard on the home page component, creating a more interactive and visually appealing user experience. Axios and dotenv were added to the backend server to streamline API requests and manage environment variables securely. The frontend application set up a context for Articles, Standings, and Fixtures to handle state management more efficiently. Data successfully caches with the MongoDB database. Images were added to the assets directory, and API requests for the front end were configured. The standings component was implemented and styled, clearly displaying rankings. Similarly, the newsfeed component was completed, along with modular newsfeed cards, contributing to the overall functionality and design of the home page component.
+
 🌵 Challenges - Write challenges here.
-<br>
+This week, I faced several challenges. Learning and using the Swiper library to improve the scoreboard on the home page was challenging and took a lot of time. I also had trouble getting the APIs to store data correctly in the MongoDB database, which required careful setup and debugging. Managing my time was complicated since this project was complex, and balancing all the tasks was demanding. Despite these challenges, I learned a lot and improved my handling of complex projects.
+
 🏆 Accomplishments - Write Accomplishments here.
-<br>
+This week, I made significant progress on my project. I installed and integrated the Swiper library to enhance the scoreboard on the home page. I set up the backend, including the server, database connections, models, controllers, and routes. I implemented and styled various frontend components, such as the standings, newsfeed, scoreboard, and footer. I optimized the SCSS files and fixed various styling issues. I also updated React Router for navigation and added context providers for state management. Lastly, I updated the README and git ignore files and prepared the project for easy setup with .env files.
+
 🔮 Next Steps - Write your next steps here.
 
-<br>
+- Implement a burger menu for mobile navigation.
+- Ensure responsive design across all viewports.
+- Develop a tickets component for event management.
+- Enhance the standings component with additional data and styling.
+- Integrate Teams context for state management.
+- Create a component to display team details by ID.
+- Create a component to display fixture details by ID.
+- Set up `node-cron` for automated data updates.
+- Link all fixtures and teams to their respective ID pages.
+- Enhance the scoreboard on the home page with a sticky date header.
+- Implement user authentication functionality.
+- Add loading states to the application and display visual loading indicators in components.
 
 Please discuss the following:
 

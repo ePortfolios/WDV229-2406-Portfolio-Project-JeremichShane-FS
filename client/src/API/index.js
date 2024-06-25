@@ -39,4 +39,13 @@ API.getCombinedFixtures = async () => {
   }
 };
 
+API.getFixturesForWeek = async weekOffset => {
+  try {
+    const res = await axios.get(`${baseURL}/api/v1/fixtures/week`, { params: { weekOffset } });
+    return res.data;
+  } catch (err) {
+    console.error(err);
+  }
+};
+
 export default API;
