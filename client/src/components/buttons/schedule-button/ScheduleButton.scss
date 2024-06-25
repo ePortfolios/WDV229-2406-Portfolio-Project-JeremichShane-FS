@@ -14,7 +14,7 @@
   white-space: nowrap;
 
   &:hover {
-    background: $rgba-black-15;
+    background: rgba($black, 0.05);
   }
 
   &:active {
@@ -22,9 +22,10 @@
   }
 }
 
-.flex {
+.schedule-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  background: $gray-300;
 }

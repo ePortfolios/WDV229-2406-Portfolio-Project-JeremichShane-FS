@@ -1,9 +1,9 @@
 import Proptypes from "prop-types";
 import "./ScheduleButton.scss";
 
-const ScheduleButton = ({ type, children, variant }) => {
+const ScheduleButton = ({ type, children, variant, onClick }) => {
   return (
-    <button type={type} className={`schedule-button ${variant}`}>
+    <button type={type} className={`schedule-button ${variant}`} onClick={onClick}>
       {children}
     </button>
   );
@@ -14,6 +14,7 @@ ScheduleButton.propTypes = {
   className: Proptypes.string,
   children: Proptypes.node.isRequired,
   variant: Proptypes.string,
+  onClick: Proptypes.func.isRequired,
 };
 
 export default ScheduleButton;
