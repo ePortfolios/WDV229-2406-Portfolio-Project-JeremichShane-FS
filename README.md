@@ -144,24 +144,31 @@ Please discuss the following:
 - Reason you chose the API
 - Where in your code did you use it?
 
-#### 1st Library
+#### Axios
 
-- Link to the library
-- Link to library tutorial that you made already.
+- [Axios npm](https://www.npmjs.com/package/axios)
+- [Axios Tutorial](https://fullsailedu-my.sharepoint.com/:v:/g/personal/scjeremich_student_fullsail_edu/EdwQEMPZy_9GgOJeLuDpffsBN_g5eGvtm4mQ2EHbHkIgXQ?e=wqacEw&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 - Reason you chose this library.
+  - I chose Axios for my project due to its wide support for browser and node.js environments, easy-to-use API for making HTTP requests, and built-in features like automatic JSON data transformation and request/response interception.
 - Where in your code is it used?
+  - Axios is employed on both the client-side and server-side to manage HTTP communications. On the front end, Axios is utilized to interact with the server's endpoints, facilitating the submission of requests and retrieval of responses. On the back end, Axios serves the purpose of fetching data from external APIs, enabling seamless data integration and manipulation within the server's logic.
 
-#### 2nd Library
+#### Swiper
 
-- Link to the library
+- [Swiper](https://www.npmjs.com/package/swiper)
 - Reason you chose this library.
+  - Swiper was selected due to its widespread popularity, extensive documentation, and user-friendly implementation capabilities, significantly streamlining the development process for complex interactive elements.
 - Where in your code is it used?
+  - This is deployed within the front-end's home component, serving as the initial interface encountered upon the application's execution.
 
 #### Persistent Data
 
 - Discuss if you have used MongoDB or Local Storage.
+  - MongoDB for the caching of my data.
 - How was it used in your code?
+  - The decision was made to utilize MongoDB as the primary data storage solution. Information is systematically fetched and subsequently cached within the database. This facilitates the utilization of dedicated endpoints for robust interaction with the stored data.
 - Where in your code is it used?
+  - The mongoose library was integrated into the backend infrastructure to establish and manage connections with the MongoDB database. This library plays a crucial role in persisting data obtained from external APIs by facilitating its storage within the database.
 
 <br>
 

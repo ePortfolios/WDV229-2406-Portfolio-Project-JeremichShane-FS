@@ -4,7 +4,6 @@ import morgan from "morgan";
 import { RESPONSE_MESSAGES } from "./constants/responseMessages.js";
 import { handleMongooseErrors } from "./middleware/index.js";
 import routeHandler from "./routes/index.js";
-import { fetchArticles } from "./services/dataService.js";
 
 const app = express();
 
