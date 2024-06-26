@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Form, InputField } from "../../components";
 import { FormButton } from "../../components/buttons";
+import { SIGNUP } from "../../constants/routes";
 import "./Login.scss";
 
 const Login = () => {
@@ -15,9 +16,11 @@ const Login = () => {
               <span className="login__span">Forget Password?</span>
             </Link>
             <div className="login__form-buttons">
-              <FormButton type="button" variant="red">
-                Sign Up
-              </FormButton>
+              <Link to={SIGNUP}>
+                <FormButton type="button" variant="red">
+                  Sign Up
+                </FormButton>
+              </Link>
               <FormButton type="submit" variant="transparent">
                 Login
               </FormButton>
