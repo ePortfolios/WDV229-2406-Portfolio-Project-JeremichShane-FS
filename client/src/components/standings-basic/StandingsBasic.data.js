@@ -1,5 +1,5 @@
-export const columns = [
-  { header: "Team", render: d => d.team.name },
+export const columns = conference => [
+  { header: `${conference}`, render: d => d.team.name },
   { header: "GP", render: d => d.all.played },
   { header: "W", render: d => d.all.win },
   { header: "D", render: d => d.all.draw },

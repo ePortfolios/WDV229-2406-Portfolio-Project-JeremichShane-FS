@@ -16,9 +16,9 @@ const useFetchData = (apiFunc, dependencies = []) => {
 
     const fetchData = async () => {
       try {
-        const result = await apiFunc();
+        const res = await apiFunc();
         if (isMounted) {
-          setData(result);
+          setData(res);
           setError(null);
         }
       } catch (err) {

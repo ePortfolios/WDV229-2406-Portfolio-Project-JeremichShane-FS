@@ -13,10 +13,10 @@ const StandingsBasic = () => {
     <article className="standings-basic">
       <h1 className="standings-basic__title">MLS Standings</h1>
       <div className="standings-basic__east">
-        <Table standingsData={eastStandings} columns={columns} />
+        <Table standingsData={eastStandings} columns={columns("EAST")} />
       </div>
       <div className="standings-basic__west">
-        <Table standingsData={westStandings} columns={columns} />
+        <Table standingsData={westStandings} columns={columns("WEST")} />
       </div>
     </article>
   );

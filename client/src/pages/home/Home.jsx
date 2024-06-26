@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { memo } from "react";
+import API from "../../API";
 import { Newsfeed, Scoreboard } from "../../components";
-import useFetchCombinedGames from "../../hooks/useFetchCombinedGames";
+import { useFetchData, useSyncStateWithData } from "../../hooks";
 
-const Home = () => {
-  const [games, setGames] = useState([]);
-
-  useFetchCombinedGames(setGames);
+const HomeComponent = () => {
+  const { data } = useFetchData(API.getCombinedFixtures);
+  const [games] = useSyncStateWithData([], data);
 
   return (
     <div>
@@ -14,4 +14,8 @@ const Home = () => {
     </div>
   );
 };
+
+const Home = memo(HomeComponent);
+Home.displayName = "Home";
+
 export default Home;

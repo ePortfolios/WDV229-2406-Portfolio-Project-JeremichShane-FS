@@ -14,8 +14,6 @@ const Schedule = () => {
   const { data, refetch } = useFetchData(() => API.getFixturesForWeek(weekOffset), [weekOffset]);
   const [games] = useSyncStateWithData([], data);
 
-  console.log(weekOffset, games);
-
   useEffect(() => {
     refetch();
   }, [weekOffset, refetch]);
