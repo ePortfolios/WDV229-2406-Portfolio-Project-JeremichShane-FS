@@ -10,10 +10,13 @@ export function getCurrentWeek(weekOffset = 0) {
   const lastDayOfWeek = new Date(currentDate);
   lastDayOfWeek.setDate(last);
 
-  // Format the dates to "Month Day" format
-  const format = { month: "long", day: "numeric" };
-  return `${firstDayOfWeek.toLocaleDateString(
-    "en-US",
-    format
-  )} - ${lastDayOfWeek.toLocaleDateString("en-US", format)}`;
+  const sameMonth = firstDayOfWeek.getMonth() === lastDayOfWeek.getMonth();
+  const formatFirstDay = { month: "short", day: "numeric" };
+  const formatLastDay = { day: "numeric" };
+
+  return `${firstDayOfWeek.toLocaleDateString("en-US", formatFirstDay)} - ${
+    sameMonth
+      ? lastDayOfWeek.toLocaleDateString("en-US", formatLastDay)
+      : lastDayOfWeek.toLocaleDateString("en-US", formatFirstDay)
+  }`;
 }

@@ -12,7 +12,7 @@ import MemoizedScheduleRow from "./ScheduleRow";
 const Schedule = () => {
   const [weekOffset, setWeekOffset] = useState(0);
   const { data, refetch } = useFetchData(() => API.getFixturesForWeek(weekOffset), [weekOffset]);
-  const [games] = useSyncStateWithData([], data);
+  const [games] = useSyncStateWithData(data);
 
   useEffect(() => {
     refetch();
@@ -27,24 +27,13 @@ const Schedule = () => {
   return (
     <section className="schedule">
       <h1 className="schedule__title">Schedule & Scores</h1>
-      <h2 className="schedule__week">{getCurrentWeek(weekOffset)}</h2>
+      <h2 className="schedule__week"></h2>
       <div className="schedule__navigation">
-        <ScheduleButton
-          className="schedule__button schedule__button--prev"
-          type="FormButton"
-          variant="schedule-btn"
-          onClick={handlePreviousWeek}>
-          <RiArrowLeftLine />
-          Previous Week
-        </ScheduleButton>
-        <ScheduleButton
-          className="schedule__button schedule__button--next"
-          type="FormButton"
-          variant="schedule-btn"
-          onClick={handleNextWeek}>
-          Next Week
-          <RiArrowRightLine />
-        </ScheduleButton>
+        <div className="schedule-btn">
+          <RiArrowLeftLine onClick={handlePreviousWeek} className="schedule-btn--arrow" />
+          {getCurrentWeek(weekOffset)}
+          <RiArrowRightLine onClick={handleNextWeek} className="schedule-btn--arrow" />
+        </div>
       </div>
       <table className="schedule-table">
         <tbody>

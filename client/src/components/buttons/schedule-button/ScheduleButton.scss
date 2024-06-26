@@ -1,31 +1,30 @@
 @use "../../../sass/base/" as *;
 
-.schedule-button {
+.schedule-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
   min-width: 11rem;
   height: 2rem;
-  text-align: center;
   line-height: 2rem;
-
   padding: 0 1rem;
+
   border: 2px solid $black;
   border-radius: 0.375rem;
 
   cursor: pointer;
   white-space: nowrap;
-
-  &:hover {
-    background: rgba($black, 0.05);
-  }
-
-  &:active {
-    transform: scale(0.95);
-  }
 }
 
-.schedule-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  background: $gray-300;
+.schedule-btn--arrow {
+  font-size: 1.5rem;
+  &:hover {
+    scale: 1.1;
+    cursor: pointer;
+  }
+  &:active {
+    scale: 0.9;
+  }
 }

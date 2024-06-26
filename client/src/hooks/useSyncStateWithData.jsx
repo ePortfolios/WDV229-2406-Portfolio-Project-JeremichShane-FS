@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function useSyncStateWithData(initialState, data) {
+function useSyncStateWithData(data, initialState = []) {
   const [state, setState] = useState(initialState);
 
   useEffect(() => {

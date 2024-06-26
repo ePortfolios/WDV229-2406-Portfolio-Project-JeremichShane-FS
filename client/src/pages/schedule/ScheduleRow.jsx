@@ -5,11 +5,12 @@ import { formatDateShort, formatTime } from "../../utils";
 const ScheduleRow = React.memo(({ game }) => (
   <tr key={game.fixture.id} className="schedule-table__row">
     <td className="schedule-table__date">{formatDateShort(game.fixture.date)}</td>
+
     <td className="schedule-table__team schedule-table__team--home">
       {game.teams.home.name}
       <img
         src={game.teams.home.logo}
-        alt={`${game.teams.home.name} logo`} //
+        alt={`${game.teams.home.name} logo`}
         className="schedule-table__logo"
       />
     </td>
@@ -31,6 +32,7 @@ const ScheduleRow = React.memo(({ game }) => (
       />
       {game.teams.away.name}
     </td>
+
     <td className="schedule-table__details">
       <span className="schedule-table__round">{`MLS ${game.league.round.split(" - ")[0]}`}</span>
       <span className="schedule-table__venue">{game.fixture.venue.name}</span>

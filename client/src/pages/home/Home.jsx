@@ -5,7 +5,7 @@ import { useFetchData, useSyncStateWithData } from "../../hooks";
 
 const HomeComponent = () => {
   const { data } = useFetchData(API.getCombinedFixtures);
-  const [games] = useSyncStateWithData([], data);
+  const [games] = useSyncStateWithData(data);
 
   return (
     <div>
