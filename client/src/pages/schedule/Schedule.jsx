@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { GiSoccerField } from "react-icons/gi";
 import { RiArrowLeftLine, RiArrowRightLine } from "react-icons/ri";
 import API from "../../API";
-import { ScheduleButton } from "../../components/buttons";
 import { useFetchData } from "../../hooks";
 import useSyncStateWithData from "../../hooks/useSyncStateWithData";
 import { getCurrentWeek } from "../../utils";
