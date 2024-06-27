@@ -38,7 +38,7 @@
     margin-top: 1rem;
 
     td {
-      padding: 8px;
+      padding: 0.8rem;
       text-align: left;
       vertical-align: middle;
     }
@@ -48,6 +48,16 @@
       justify-content: center;
       align-items: center;
       width: 100%;
+
+      border-top: 1px solid $gray-300;
+
+      &:nth-last-child(1) {
+        border-bottom: 1px solid $gray-300;
+      }
+
+      &:nth-child(odd) {
+        background: $gray-100;
+      }
     }
 
     &__date {
