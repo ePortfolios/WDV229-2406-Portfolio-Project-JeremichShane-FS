@@ -1,10 +1,11 @@
 import { useAuth0 } from "@auth0/auth0-react";
+import { memo } from "react";
 import { Link } from "react-router-dom";
 import * as p from "../../constants/routes";
 import "./Navbar.scss";
 
-const Navbar = () => {
-  const { loginWithRedirect, isAuthenticated, logout } = useAuth0();
+const NavbarComponent = () => {
+  const { loginWithRedirect, isAuthenticated, logout, isLoading } = useAuth0();
 
   return (
     <nav className="navbar">
@@ -19,8 +20,10 @@ const Navbar = () => {
             Standings
           </Link>
         </li>
-
-        {!isAuthenticated ? (
+        {
+          isLoading ? (<div></div>) : 
+          
+          !isAuthenticated ? (
           <li className="navbar__item">
             <div onClick={() => loginWithRedirect()} className="navbar__link">
               Login
@@ -39,4 +42,8 @@ const Navbar = () => {
     </nav>
   );
 };
+
+const Navbar = memo(NavbarComponent);
+Navbar.displayName = "Navbar";
+
 export default Navbar;

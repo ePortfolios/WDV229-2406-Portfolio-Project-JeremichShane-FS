@@ -41,7 +41,35 @@ const ScheduleRow = React.memo(({ game }) => (
 ));
 
 ScheduleRow.propTypes = {
-  game: PropTypes.object.isRequired,
+  game: PropTypes.shape({
+    fixture: PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      date: PropTypes.string.isRequired,
+      status: PropTypes.shape({
+        short: PropTypes.string.isRequired,
+      }).isRequired,
+      venue: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired,
+    teams: PropTypes.shape({
+      home: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        logo: PropTypes.string.isRequired,
+      }).isRequired,
+      away: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        logo: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired,
+    goals: PropTypes.shape({
+      home: PropTypes.number,
+      away: PropTypes.number,
+    }),
+    league: PropTypes.shape({
+      round: PropTypes.string.isRequired,
+    }).isRequired,
+  }).isRequired,
 };
 
 ScheduleRow.displayName = "ScheduleRow";

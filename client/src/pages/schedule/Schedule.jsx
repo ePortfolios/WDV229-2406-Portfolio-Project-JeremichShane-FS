@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { GiSoccerField } from "react-icons/gi";
 import { RiArrowLeftLine, RiArrowRightLine } from "react-icons/ri";
+import { FadeLoader } from "react-spinners";
 import API from "../../API";
 import { useFetchData } from "../../hooks";
+import useAutoRefetch from "../../hooks/useAutoRefetch";
 import useSyncStateWithData from "../../hooks/useSyncStateWithData";
 import { getCurrentWeek } from "../../utils";
 import "./Schedule.scss";
@@ -10,18 +12,17 @@ import MemoizedScheduleRow from "./ScheduleRow";
 
 const Schedule = () => {
   const [weekOffset, setWeekOffset] = useState(0);
-  const { data, refetch } = useFetchData(() => API.getFixturesForWeek(weekOffset), [weekOffset]);
+  const { data, refetch, loading } = useFetchData(() => API.getFixturesForWeek(weekOffset), [weekOffset]);
   const [games] = useSyncStateWithData(data);
 
-  useEffect(() => {
-    refetch();
-  }, [weekOffset, refetch]);
+  useAutoRefetch(weekOffset, refetch);
 
   const handlePreviousWeek = () => {
     setWeekOffset(weekOffset - 1);
-    console.log(weekOffset);
   };
   const handleNextWeek = () => setWeekOffset(weekOffset + 1);
+
+  console.log(weekOffset); // Moved console.log outside JSX
 
   return (
     <section className="schedule">
@@ -36,8 +37,14 @@ const Schedule = () => {
       </div>
       <table className="schedule-table">
         <tbody>
-          {games.length > 0 ? (
-            games.map(game => <MemoizedScheduleRow key={game.fixture.id} game={game} />)
+          {loading ? (
+            <tr>
+              <td className="schedule-table__message"><FadeLoader color="#000" loading={loading} size={15} /></td>
+            </tr>
+          ) : games && games.length > 0 ? (
+            games.map((game) => (
+              <MemoizedScheduleRow key={game.fixture.id} game={game} />
+            ))
           ) : (
             <tr>
               <td className="schedule-table__message">
@@ -46,12 +53,6 @@ const Schedule = () => {
               </td>
             </tr>
           )}
-        </tbody>
-
-        <tbody>
-          {games.map(game => (
-            <MemoizedScheduleRow key={game.fixture.id} game={game} />
-          ))}
         </tbody>
       </table>
     </section>
