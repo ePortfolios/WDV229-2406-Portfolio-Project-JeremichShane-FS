@@ -1,5 +1,4 @@
 import dotenv from "dotenv";
-
 import connectDB from "./app/db/config.js";
 import app from "./app/index.js";
 import initializeData from "./app/scripts/initializeData.js";

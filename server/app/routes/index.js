@@ -1,7 +1,6 @@
 import express from "express";
 import { RESPONSE_MESSAGES } from "../constants/responseMessages.js";
 import articleRoutes from "./articleRoutes.js";
-
 import fixtureRoutes from "./fixtureRoutes.js";
 import standingsRoutes from "./standingsRoutes.js";
 

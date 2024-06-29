@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
 import "./NewsfeedCard.scss";
 
 const NewsfeedCard = ({ _id, description, headline, images }) => {
@@ -7,13 +6,11 @@ const NewsfeedCard = ({ _id, description, headline, images }) => {
     <li className="newsfeed-card" key={_id}>
       {images.length > 0 && images[0].url && (
         <div className="newsfeed-card__image">
-          <Link to="#">
-            <img
-              src={images[0].url}
-              alt={images[0].alt || "newsfeed"}
-              className="newsfeed-card__img"
-            />
-          </Link>
+          <img
+            src={images[0].url}
+            alt={images[0].alt || "newsfeed"}
+            className="newsfeed-card__img"
+          />
         </div>
       )}
       <div className="newsfeed-card__content">

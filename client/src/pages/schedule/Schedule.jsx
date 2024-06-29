@@ -12,7 +12,10 @@ import MemoizedScheduleRow from "./ScheduleRow";
 
 const Schedule = () => {
   const [weekOffset, setWeekOffset] = useState(0);
-  const { data, refetch, loading } = useFetchData(() => API.getFixturesForWeek(weekOffset), [weekOffset]);
+  const { data, refetch, loading } = useFetchData(
+    () => API.getFixturesForWeek(weekOffset),
+    [weekOffset]
+  );
   const [games] = useSyncStateWithData(data);
 
   useAutoRefetch(weekOffset, refetch);
@@ -21,8 +24,6 @@ const Schedule = () => {
     setWeekOffset(weekOffset - 1);
   };
   const handleNextWeek = () => setWeekOffset(weekOffset + 1);
-
-  console.log(weekOffset); // Moved console.log outside JSX
 
   return (
     <section className="schedule">
@@ -39,12 +40,12 @@ const Schedule = () => {
         <tbody>
           {loading ? (
             <tr>
-              <td className="schedule-table__message"><FadeLoader color="#000" loading={loading} size={15} /></td>
+              <td className="schedule-table__message">
+                <FadeLoader color="#000" loading={loading} size={15} />
+              </td>
             </tr>
           ) : games && games.length > 0 ? (
-            games.map((game) => (
-              <MemoizedScheduleRow key={game.fixture.id} game={game} />
-            ))
+            games.map(game => <MemoizedScheduleRow key={game.fixture.id} game={game} />)
           ) : (
             <tr>
               <td className="schedule-table__message">

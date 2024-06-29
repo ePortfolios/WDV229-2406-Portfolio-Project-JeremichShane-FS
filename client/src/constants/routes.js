@@ -1,9 +1,10 @@
-export const ROOT = "/";
+export const DASHBOARD = "/dashboard";
 export const HOME = "/home";
+export const LOGIN = "/login";
+export const NOT_FOUND = "*";
+export const PROFILE = "/profile";
+export const ROOT = "/";
 export const SCHEDULE = "/schedule";
+export const SIGNUP = "/signup";
 export const STANDINGS = "/standings";
 export const TICKETS = "/tickets";
-export const LOGIN = "/login";
-export const SIGNUP = "/signup";
-export const PROFILE = "/profile";
-export const NOT_FOUND = "*";

@@ -10,8 +10,8 @@ export const AppContextProvider = ({ children }) => {
       <ArticlesContextProvider>
         <FixturesContextProvider>
           <Auth0Provider
-            domain="dev-sdhlg782szpgf7ug.us.auth0.com"
-            clientId="KuFg0RMS0BRkwo9lsVGox6A6ZAjlWW1H"
+            domain={import.meta.env.VITE_AUTH0_DOMAIN}
+            clientId={import.meta.env.VITE_AUTH0_CLIENT_ID}
             authorizationParams={{
               redirect_uri: window.location.origin,
             }}>
