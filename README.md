@@ -112,16 +112,13 @@ Please discuss the following:
 
 ### Milestone 3
 
-⚙️ Overview - Write overview here.
-Over the past week, significant progress has been made on the project. The Swiper library was installed to enhance the scoreboard on the home page component, creating a more interactive and visually appealing user experience. Axios and dotenv were added to the backend server to streamline API requests and manage environment variables securely. The frontend application set up a context for Articles, Standings, and Fixtures to handle state management more efficiently. Data successfully caches with the MongoDB database. Images were added to the assets directory, and API requests for the front end were configured. The standings component was implemented and styled, clearly displaying rankings. Similarly, the newsfeed component was completed, along with modular newsfeed cards, contributing to the overall functionality and design of the home page component.
+⚙️ Overview - Over the past week, significant progress has been made on the project. The Swiper library was installed to enhance the scoreboard on the home page component, creating a more interactive and visually appealing user experience. Axios and dotenv were added to the backend server to streamline API requests and manage environment variables securely. The frontend application set up a context for Articles, Standings, and Fixtures to handle state management more efficiently. Data successfully caches with the MongoDB database. Images were added to the assets directory, and API requests for the front end were configured. The standings component was implemented and styled, clearly displaying rankings. Similarly, the newsfeed component was completed, along with modular newsfeed cards, contributing to the overall functionality and design of the home page component.
 
-🌵 Challenges - Write challenges here.
-This week, I faced several challenges. Learning and using the Swiper library to improve the scoreboard on the home page was challenging and took a lot of time. I also had trouble getting the APIs to store data correctly in the MongoDB database, which required careful setup and debugging. Managing my time was complicated since this project was complex, and balancing all the tasks was demanding. Despite these challenges, I learned a lot and improved my handling of complex projects.
+🌵 Challenges -This week, I faced several challenges. Learning and using the Swiper library to improve the scoreboard on the home page was challenging and took a lot of time. I also had trouble getting the APIs to store data correctly in the MongoDB database, which required careful setup and debugging. Managing my time was complicated since this project was complex, and balancing all the tasks was demanding. Despite these challenges, I learned a lot and improved my handling of complex projects.
 
-🏆 Accomplishments - Write Accomplishments here.
-This week, I made significant progress on my project. I installed and integrated the Swiper library to enhance the scoreboard on the home page. I set up the backend, including the server, database connections, models, controllers, and routes. I implemented and styled various frontend components, such as the standings, newsfeed, scoreboard, and footer. I optimized the SCSS files and fixed various styling issues. I also updated React Router for navigation and added context providers for state management. Lastly, I updated the README and git ignore files and prepared the project for easy setup with .env files.
+🏆 Accomplishments - This week, I made significant progress on my project. I installed and integrated the Swiper library to enhance the scoreboard on the home page. I set up the backend, including the server, database connections, models, controllers, and routes. I implemented and styled various frontend components, such as the standings, newsfeed, scoreboard, and footer. I optimized the SCSS files and fixed various styling issues. I also updated React Router for navigation and added context providers for state management. Lastly, I updated the README and git ignore files and prepared the project for easy setup with .env files.
 
-🔮 Next Steps - Write your next steps here.
+🔮 Next Steps -
 
 - Implement a burger menu for mobile navigation.
 - Ensure responsive design across all viewports.
@@ -178,13 +175,26 @@ Please discuss the following:
 
 ### Milestone 4
 
-⚙️ Overview - Write overview here.
-<br>
-🌵 Challenges - Write challenges here.
-<br>
-🏆 Accomplishments - Write Accomplishments here.
-<br>
-🔮 Next Steps - Write your next steps here.
+⚙️ Overview - I styled the standings and newsfeed components. I optimized the context providers by creating a single AppContext for cleaner code and finished styling the footer component. I created a team name map helper function for the scoreboard, set up the backend with initial data, models, controllers, and routes, and created a data services file for saving API data to MongoDB. I also started to implement node-cron for future automated updates, removed the tickets component due to time constraints, and set up environment files for automatic project initialization. I added a legend and tiebreakers to the standings tables, implemented an endpoint for weekly games, added media queries for mobile responsiveness, and made various optimizations and bug fixes across the project. I added a custom hook for fetching data, finished the Schedule component, and introduced authentication with Auth0 for protected routes and user login/logout functionality.
+
+🌵 Challenges - During the development of my project, I faced significant challenges integrating Auth0, specifically with their management API. Also, managing and sorting data from my fixtures collection proved challenging. I needed to set a variable for the current week, and then create a function to determine the start and end of the week based on the current time, from Sunday to Saturday. Implementing a weekOffset state variable to adjust the current week dynamically required careful logic to filter game fixtures accurately within the schedule component, allowing users to navigate through different weeks seamlessly.
+
+🏆 Accomplishments - Setting up API requests for the front end, implementing and styling the standings, newsfeed, and home page components, and optimizing context providers for cleaner code. I also completed the backend setup and created a data services file for MongoDB integration. I introduced authentication with Auth0 and in the past week I also made various optimizations and bug fixes across the project.
+
+🔮 Next Steps -
+
+- Implement a burger menu for mobile navigation.
+- Ensure responsive design across all viewports.
+- Develop a tickets component for event management using Ticketmaster API
+- Enhance the standings component with additional data and styling.
+- Integrate Teams context for state management.
+- Create a component to display team details by ID.
+- Create a component to display fixture details by ID.
+- Set up `node-cron` for automated data updates.
+- Link all fixtures and teams to their respective ID pages.
+- Enhance the scoreboard on the home page with a sticky date header.
+- Add loading states to the application and display visual loading indicators in components.
+- Add full control of the management API for Auth0
 
 <br>
 
@@ -192,15 +202,15 @@ Please discuss the following:
 
 #### Changes
 
-- Discuss any changes or updates that you have made to your site since Milestone #3.
+- Since Milestone #3, my primary focus has been on refining and optimizing the existing codebase for improved performance, maintainability, and scalability. I've concentrated on refactoring various files to streamline the code structure and enhance its efficiency. This has involved making essential additions to complete critical features required for finalizing the basic application flow and ensuring it adheres to the initial project objectives effectively. By prioritizing code refinement, I've been able to maintain stability while preparing a solid foundation for potential future enhancements or advanced features when necessary.
 
 #### Styling
 
-- Discuss the process you used to style your page.
+- In this project, I centered my styling approach around Sass (Syntactically Awesome Style Sheets). Sass offers powerful features such as variables and nested rules that enhance CSS capabilities. To ensure consistency and ease of updates, I structured my styling files systematically. I defined global variables for colors, typography, and reset rules at the outset. Each component resides within its directory, including both its JavaScript/JSX file and a corresponding .scss file. This separation of concerns promotes codebase organization and facilitates modular styling, allowing for reuse across the application.
 
 #### Link To Overview Video
 
-- Once it is created, put the link to your overview video of your site here.
+- [Overview Video](https://fullsailedu-my.sharepoint.com/:v:/g/personal/scjeremich_student_fullsail_edu/EWInc8cgWutEhGSFnE8UBg4BxVnafx6mVqBiFyEK-vjlVg?e=onU0lR&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 <br>
 <br>
