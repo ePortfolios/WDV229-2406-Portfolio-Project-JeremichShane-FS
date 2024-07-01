@@ -1,0 +1,151 @@
+@use "../../sass/base" as *;
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  &__week {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    width: 100%;
+    height: 3rem;
+  }
+
+  .schedule-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+
+    td {
+      padding: 0.8rem;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    &__row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      border-top: 1px solid $gray-300;
+
+      &:nth-last-child(1) {
+        border-bottom: 1px solid $gray-300;
+      }
+
+      &:nth-child(odd) {
+        background: $gray-100;
+      }
+    }
+
+    &__date {
+      min-width: 20%;
+      font-size: 0.8rem;
+    }
+
+    &__team {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 3rem;
+      min-width: 25%;
+
+      font-weight: bold;
+
+      &--home {
+        justify-content: flex-end;
+      }
+
+      &--away {
+        justify-content: flex-start;
+      }
+    }
+
+    &__logo {
+      height: 2rem;
+      margin: 0 8px;
+    }
+
+    &__score {
+      min-width: max-content;
+      text-align: center;
+    }
+
+    &__result {
+      display: flex;
+
+      &-score {
+        background: $gray-300;
+        color: $black;
+        padding: 0 0.5rem;
+        border-radius: 5px;
+
+        &:nth-child(1) {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    &__time {
+      font-size: 0.8rem;
+    }
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+      min-width: 20%;
+
+      font-size: 0.8rem;
+    }
+
+    &__round {
+      color: $gray-500;
+    }
+
+    &__round,
+    &__venue {
+      text-align: right;
+      font-size: 0.8rem;
+    }
+
+    &__message {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__icon {
+      height: 20rem;
+      width: 20rem;
+    }
+
+    &__msg {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: $black;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@use "../../../sass/base" as *;
+@use "../../../sass/utilities" as *;
+
+.newsfeed-card {
+  display: flex;
+  width: 43.75rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+    padding-bottom: $header-height;
+  }
+
+  &__image {
+    position: relative;
+    margin-right: 1rem;
+  }
+
+  .newsfeed-card__img {
+    width: 40rem;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+
+  &__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: $white;
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: $heading-3-size;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  &__description {
+    margin-bottom: 0.5rem;
+  }
+
+  &__link {
+    align-self: flex-end;
+
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    @include linkStyle;
+  }
+}

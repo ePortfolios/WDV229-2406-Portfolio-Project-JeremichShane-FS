@@ -1,0 +1,10 @@
+{
+  "name": "mlshub",
+  "type": "module",
+  "scripts": {
+    "setup": "cd client && npm install && cd ../server && npm install && cd .. && node config/rename.js",
+    "frontend": "cd client && npm run dev",
+    "backend": "cd server && npm run dev",
+    "dev": "conc \"npm run frontend\" \"npm run backend\""
+  }
+}

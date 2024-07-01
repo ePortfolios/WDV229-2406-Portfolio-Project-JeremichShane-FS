@@ -1,0 +1,27 @@
+@use "../../sass/utilities/" as *;
+
+.navbar {
+  align-self: center;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 1.25rem;
+    font-size: 1.25rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+
+    @include linkStyle;
+  }
+}

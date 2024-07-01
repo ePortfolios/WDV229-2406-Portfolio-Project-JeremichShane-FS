@@ -1,0 +1,59 @@
+@use "../../sass/base" as *;
+
+.profile {
+  &__hover-container {
+    position: relative;
+    &:hover .profile__dropdown-menu {
+      display: block;
+    }
+  }
+
+  &__img {
+    width: 3rem;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid $white;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+
+  &__dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 1rem 1.5rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: $red;
+    color: $white;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__dropdown-item {
+    display: flex;
+    padding: 0.5rem 0.8rem;
+    color: $white;
+    cursor: pointer;
+    &:hover {
+      background: $black;
+      color: $white;
+    }
+
+    &-icon {
+      font-size: 1.25rem;
+    }
+
+    &-span {
+      display: flex;
+      width: max-content;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.8rem;
+    }
+  }
+}

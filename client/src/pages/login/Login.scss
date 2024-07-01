@@ -1,0 +1,39 @@
+@use "../../sass/base/" as *;
+@use "../../sass/utilities/" as *;
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: calc(100vh - $header-height);
+
+  background: url("../../assets/img/MLS-background.png");
+  background-size: cover;
+  background-position: center;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 37.5rem;
+    height: 21.875rem;
+    padding: 2em;
+
+    background: $white;
+    box-shadow: $box-shadow;
+  }
+
+  &__bottom-row {
+    display: flex;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+  }
+
+  &__span {
+    color: $gray-600;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+}

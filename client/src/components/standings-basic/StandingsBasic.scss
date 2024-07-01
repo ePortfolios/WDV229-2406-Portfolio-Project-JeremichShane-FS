@@ -1,0 +1,17 @@
+.standings-basic {
+  font-size: 0.75rem;
+
+  &__row:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+  }
+
+  &__west {
+    margin-top: 1.25rem;
+  }
+}

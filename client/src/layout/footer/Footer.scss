@@ -1,0 +1,40 @@
+@use "../../sass/base" as *;
+@use "../../sass/utilities/" as *;
+
+.footer {
+  background: $red;
+  color: $white;
+  padding: 1.25rem;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  &__picture {
+    width: 15%;
+    border-right: 2px solid $white;
+  }
+
+  &__img {
+    height: 3.75rem;
+    width: 3.75rem;
+  }
+
+  &__content {
+    width: 80%;
+    padding-left: 2rem;
+  }
+}

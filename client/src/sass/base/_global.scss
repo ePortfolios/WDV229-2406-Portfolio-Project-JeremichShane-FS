@@ -1,0 +1,36 @@
+@use "colors" as *;
+@use "typography" as *;
+@use "../utilities" as *;
+
+/* Remove default margin */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body {
+  background: $background-primary;
+  font-family: $font-primary;
+}
+
+main {
+  max-width: 90em;
+  min-height: calc(100vh - $header-height);
+  margin: 0 auto;
+  padding-top: $header-height;
+  background: $white;
+  box-shadow: $box-shadow;
+}
+
+.container {
+  max-width: 90em;
+  margin: 0 auto;
+}

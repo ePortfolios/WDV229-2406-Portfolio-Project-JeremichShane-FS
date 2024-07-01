@@ -1,0 +1,80 @@
+@use "../../../sass/base" as *;
+
+.scoreboard-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $background-secondary;
+  border-radius: 0.5rem;
+  padding: 0.9375rem;
+  margin: 0 0.3125rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0.625rem;
+  }
+
+  &__round {
+    font-size: 0.75rem;
+  }
+
+  &__team-name {
+    font-weight: bold;
+  }
+
+  &__score {
+    background: $background-tertiary;
+    border-radius: 0.125rem;
+    padding: 0.3125rem 0.625rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__match-time,
+  &__match-date {
+    font-size: 0.75rem;
+    color: $gray-500;
+  }
+
+  &__match-time {
+    margin-top: 0.3125rem;
+  }
+
+  &__team {
+    width: 100%;
+
+    &:nth-last-child(2) {
+      margin-bottom: 0.625rem;
+    }
+
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+
+  &__team-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__team-logo {
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-right: 0.5rem;
+  }
+}

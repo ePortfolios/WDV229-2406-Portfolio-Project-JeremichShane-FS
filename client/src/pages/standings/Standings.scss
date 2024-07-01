@@ -1,0 +1,49 @@
+@use "../../sass/base" as *;
+
+.standings {
+  width: 80%;
+  margin: 0 auto;
+  padding: 6.25rem 0;
+
+  &__title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+  }
+
+  &__club-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.625rem;
+  }
+
+  &__logo {
+    height: 1.25rem;
+    margin-right: 0.625rem;
+  }
+
+  &__west {
+    margin-top: 2.5rem;
+  }
+
+  &__legend {
+    margin-top: 3rem;
+
+    &-item {
+      font-size: 0.875rem;
+    }
+
+    &-list {
+      &:nth-child(2) {
+        padding-bottom: 1rem;
+        border-bottom: 1px dotted $black;
+      }
+    }
+
+    &-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 1.25rem 0;
+    }
+  }
+}
